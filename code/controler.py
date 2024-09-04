@@ -5,7 +5,7 @@ from tkinter import *
 import socket
 
 #variables
-    
+
 #server
 ip = "192.168.1.76" # IP of Raspberry Pi
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
