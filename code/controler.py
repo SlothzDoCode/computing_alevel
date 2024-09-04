@@ -1,10 +1,3 @@
-#todo list
-    #laps/time left
-    #get gtts + os working on pi
-    #pitstop button
-    #change + - position to drop down box
-    #laps completed
-
 import tkinter as tk
 from gtts import gTTS
 import os
