@@ -5,8 +5,6 @@ from tkinter import *
 import socket
 
 #variables
-
-    #test
     
 #server
 ip = "192.168.1.76" # IP of Raspberry Pi
