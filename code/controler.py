@@ -156,20 +156,6 @@ close_btn.grid(row=4, column=11, pady=50, padx=50)
 
 #2nd row buttons
 
-#positionGain_btn = tk.Button(
-    #text = "+",
-    #command=posGain_cmd,
-    #font=("Arial", 20),
-    #bg="red")
-#positionGain_btn.grid(row=6, column=4, pady=50, padx=50)
-
-#positionLoss_btn = tk.Button(
-    #text="-",
-    #command=posLoss_cmd,
-    #font=("Arial", 23),
-    #bg="green")
-#positionLoss_btn.grid(row=6, column=5, pady=50,padx=50)
-
 position_options = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 pos_clicked = StringVar(display)
 pos_clicked.set(position_options[0])
