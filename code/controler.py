@@ -102,11 +102,15 @@ def updateTimer_cmd():
     msg_timerUpdate = str("time" + " " + time_clicked.get())
     client.send(msg_timerUpdate.encode()) 
 
+def PBCloseAlert_cmd():
+    msg_PBClose = "PB_close"
+    client.send(msg_PBClose.encode())
+
 # set up visual display 
 
 display = tk.Tk()
 
-#top row buttons
+#top row buttons    
 
 flagGreen_select = tk.Button(
     text="green flag",
@@ -183,6 +187,10 @@ sendTimer_btn = tk.Button(
     text="Set time remaining",
     command=updateTimer_cmd)
 sendTimer_btn.grid(row=8, column=6, pady=50, padx=50)
+
+PBCloseAlert_btn = tk.Button(
+    text="PB Close",
+    command=PBCloseAlert_cmd)
 
 display.attributes('-fullscreen', True)
 #display.attributes('-topmost', True)
