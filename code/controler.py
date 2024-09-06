@@ -12,26 +12,6 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((ip, 2325))
 print("CLIENT: connected")
 
-#audio info
-
-language = "en"
-
-flagGreen_text = "Green Flag"
-flagGreen_audio = gTTS(text=flagGreen_text, lang=language, slow=False)
-flagGreen_audio.save("flagGreen_play.mp3")
-
-flagYellow_text = "Yellow Flag, slow down"
-flagYellow_audio = gTTS(text=flagYellow_text, lang=language, slow=False)
-flagYellow_audio.save("flagYellow_play.mp3")
-
-flagRed_text = "Red Flag, slow down and come to a stop"
-flagRed_audio = gTTS(text=flagRed_text, lang=language, slow=False)
-flagRed_audio.save("flagRed_play.mp3")
-
-flagBlue_text = "Blue flag, move out of the way and let faster cars past"
-flagBlue_audio = gTTS(text=flagBlue_text, lang=language, slow=False)
-flagBlue_audio.save("flagBlue_play.mp3")
-
 #other functions
 
 #button commands
