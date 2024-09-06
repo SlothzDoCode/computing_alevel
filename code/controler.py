@@ -84,7 +84,13 @@ def updateTimer_cmd():
 
 def PBCloseAlert_cmd():
     msg_PBClose = "PB_close"
+    #send a message
     client.send(msg_PBClose.encode())
+    
+def pitstop_cmd():
+    msg_pitstop = "Pitstop"
+    #send a message
+    client.send(msg_pitstop.encode())
 
 # set up visual display 
 
@@ -168,7 +174,19 @@ sendTimer_btn.grid(row=8, column=6, pady=50, padx=50)
 
 PBCloseAlert_btn = tk.Button(
     text="PB Close",
+    width=9,
+    height=4,
     command=PBCloseAlert_cmd)
+PBCloseAlert_btn.grid(row=8, column=10, pady=50, padx=50)
+
+Pitstop_btn = tk.Button(
+    text="Pitstop",
+    width=9,
+    height=4,
+    command=pitstop_cmd)
+Pitstop_btn.grid(row=8, column=11, pady=50, padx=50)
+
+#4th row buttons
 
 display.attributes('-fullscreen', True)
 #display.attributes('-topmost', True)
