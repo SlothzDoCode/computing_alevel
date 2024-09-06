@@ -152,8 +152,6 @@ sendPosition_btn = tk.Button(
     command=updatePos_cmd)
 sendPosition_btn.grid(row=6, column=6, pady=50, padx=50)
 
-print(pos_clicked)
-
 #3rd row buttons
 
 time_options = [5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95]
